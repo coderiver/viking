@@ -1,2 +1,394 @@
 // Normally mainpage styles
- 
+.out
+	margin: 0 auto
+	padding: 0 39px 0 31px 
+	width: 1070px
+	min-height: 100%
+	+box
+.h1
+	font-size: 36px
+.h3
+	font-size: 26px
+.h4
+	font-size: 18px
+.h1, .h3, .h4
+	text-transform: uppercase
+a, .h1, .h3, .h4, .phone, .mail, .menu__item, .cycle__top, .cycle__date,
+	color: #231F20
+	font-weight: 400 
+	font-family: 'Roboto Condensed', sans-serif 
+p
+	font: 13px normal Arial, sans-serif
+.border
+	left: -31px
+	right: -39px
+	height: 3px 
+	background: #000
+
+
+// header
+.header
+	height: 94px
+.header__left
+	float: left
+	margin-top: 10px
+	+s(logo)
+.header__right
+	float: right
+	margin-top: 56px
+.phone, .mail
+	font-size: 18px
+.phone
+	padding-right: 5px
+.mail
+	color: #E44617 
+	text-decoration: none
+	text-transform: uppercase
+	&:hover
+		text-decoration: underline
+.header__right, .menu
+	padding: 0 20px 0 8px 
+	+box
+
+
+// menu
+.menu
+	position: relative
+	width: 100%
+	font-size: 0
+	.border
+		position: absolute
+		bottom: -3px 
+	.menu__item
+		padding: 0 15px
+		height: 38px
+		font-size: 16px
+		display: inline-block
+		a
+			color: #231F20 
+			line-height: 34px
+			text-decoration: none
+			text-transform: uppercase
+			+transition(0.2s) 
+		&.is-active
+			background: #E44617 
+			a
+				color: #fff
+		&:hover
+			background: #E44617 
+			+transition(0.2s)
+			a
+				color: #fff 
+	.menu__input
+		position: relative
+		float: right
+		padding-right: 23px
+		width: 205px
+		input
+			padding: 0 9px
+			width: 100%
+			height: 25px
+			line-height: 24px
+			font-size: 16px
+			+placeholder-color(#231F20)
+			+placeholder
+				text-transform: uppercase
+			&:focus
+				+placeholder
+					font-size: 0
+		&:before
+			position: absolute
+			content: ""
+			top: 0
+			left: -1px
+			height: 25px
+			width: 1px
+			background: #000 
+		&:after
+			position: absolute
+			content: ""
+			top: 5px
+			right: 0
+			+s(seach)
+
+
+// cycle
+.cycle
+	position: relative
+	margin-top: 3px
+	overflow: hidden
+	.cycle__field
+		position: absolute
+		top: 0
+		left: 57px
+		bottom: 0
+		width: 333px
+	.cycle__top
+		padding: 60px 15px 85px 24px 
+		text-transform: uppercase
+		.cycle__text
+			font-size: 18px
+		.h1
+			padding-bottom: 10px
+			line-height: 1
+	.cycle__bot
+		padding: 25px
+		background: rgba(225, 225, 225, 0.6) 
+		+box
+	.cycle__col
+		position: relative
+		padding-bottom: 29px
+		.h4
+			position: relative
+			margin-bottom: 18px
+			padding: 0 0 5px 2px
+			line-height: 1
+			text-decoration: none
+			display: block
+			&:before
+				position: absolute
+				content: "" 
+				left: 0
+				bottom: 0
+				right: 0
+				height: 2px
+				background: #231F20 
+		.cycle__date
+			position: absolute
+			left: -87px
+			top: 18px
+			padding: 0 12px 0 14px 
+			height: 36px
+			color: #fff 
+			line-height: 36px
+			font-size: 14px
+			background: #231F20 
+			+rotate(270, deg)
+.cycle__nav
+	position: absolute
+	bottom: 33px
+	width: 37px
+	height: 37px
+	background: #231F20
+	z-index: 10000
+	+transition(0.2s)
+	i
+		position: absolute
+		top: 50%
+		left: 14px
+		margin-top: -10px
+		+s(next-pic)
+	&:hover
+		background: #E44617
+		+transition(0.2s)
+.cycle__nav_prev
+	right: 87px
+	i
+		left: 10px
+		+rotate(180, deg)
+.cycle__nav_next
+	right: 37px
+	span
+		right: 0
+.cycle__item
+	position: relative
+	width: 100%
+	height: 660px
+	overflow: hidden
+	img
+		display: block
+// previews
+.previews
+	position: relative
+	margin-left: -18px
+	padding: 14px 0 50px
+	.border
+		position: absolute
+		top: 0
+		left: -13px
+.previews__item
+	position: relative
+	margin-left: 18px
+	width: 31.3%
+	height: 242px
+	overflow: hidden
+	display: inline-block
+	-webkit-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+.previews__col
+	position: absolute
+	bottom: -143px
+	height: 190px
+	width: 100%
+	background: rgba(255,255,255,.7) 
+	+transition(0.4s)
+	&:hover 
+		bottom: 0
+		+transition(0.4s)
+	.h4
+		height: 47px
+		width: 100%
+		line-height: 47px
+		color: #fff
+		text-align: center
+		cursor: pointer
+		background: #231F20 
+	.previews__text
+		padding: 10px 20px 0
+	.btn
+		position: absolute
+		left: 50%
+		bottom: 0
+		margin-left: -92.5px
+		i
+			padding-left: 8px
+			font-style: normal
+			font-size: 30px
+			line-height: 1
+			vertical-align: text-bottom
+			
+
+// popular-items
+.popular-items
+	position: relative
+	.h3
+		margin-left: 20px
+		padding: 0 10px 
+		display: inline-block
+		background: #FFF 
+	.border
+		position: absolute
+		top: 26px
+		z-index: -1
+	.carousel
+		padding: 38px 37px 32px 
+		position: relative
+		overflow: hidden
+		.cycle-slideshow
+			width: 100% !important
+		.cycle__nav
+			top: 120px
+			width: 36px
+			height: 90px
+		.cycle__nav_prev
+			left: 0
+		.cycle__nav_next
+			right: 0
+	.carousel__item
+		position: relative !important
+		height: 340px
+		width: 251px
+		margin: 0 1.6% 
+		vertical-align: top
+		text-align: center
+		.h4
+			line-height: 1.2
+			font-weight: 700
+	.cycle-sentinel
+		margin: 0
+	.carousel__img
+		line-height: 256px
+		overflow: hidden
+		img
+			float: right
+			margin-right: 30px
+			vertical-align: middle
+			display: block
+	.price
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 154px
+	.price__value
+		float: right
+		padding: 0 18px 
+		height: 37px
+		font-family: 'Roboto Condensed', sans-serif
+		font-weight: 900 
+		text-align: center
+		line-height: 37px
+		color: #fff 
+		z-index: 20000
+		background: #E44617
+		display: inline-block 
+	.price__discount
+		float: right
+		margin-right: 24px
+		padding: 0 12px 
+		height: 37px
+		line-height: 37px
+		text-align: center
+		color: #fff 
+		background: #231F20 
+		display: inline-block
+
+
+// .article
+.article
+	position: relative
+	padding: 14px 0 25px 18px
+	width: 100%
+	.border
+		position: absolute
+		top: 0
+		right: -21px
+.article__item
+	position: relative
+	margin-right: 37px
+	padding-right: 37px
+	width: 300px
+	vertical-align: top
+	display: inline-block
+	+box
+.article__item_mod
+	margin-right: 0
+.article__continue	
+	position: absolute
+	top: 0
+	right: 0
+	height: 37px
+	width: 37px
+	line-height: 37px
+	color: #fff 
+	text-align: center
+	text-decoration: none
+	font-weight: bold
+	font-size: 18px
+	background: #231F20 
+	display: inline-block
+	+transition(0.2s)
+	&:hover	
+		background: #e44617 
+		+transition(0.2s)
+
+
+// footer
+.footer
+	position: relative
+	height: 106px
+	.border
+		position: absolute
+		top: 0
+.footer__left
+	float: left
+.footer__logo
+	margin-top: 18px
+	text-decoration: none
+	display: inline-block
+	+s(footer__logo)
+.footer__right
+	float: right
+	margin-top: 28px
+	line-height: 1
+	text-align: right
+.footer__copyright
+	margin-top: 10px
+.footer__development
+	margin-top: 16px
+	line-height: 1
+	a
+		text-decoration: none
+		color: #E44617
+		&:hover
+			text-decoration: underline

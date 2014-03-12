@@ -6,15 +6,261 @@
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="js/cycle.js"></script>
+	<script src="js/jquery.cycle2.carousel.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
 
 <!-- BEGIN  out-->
 <div class="out">
+	<!-- BEGIN .header -->
+	<div class="header">
+		<a href="#" class="header__left"></a>
+		<div class="header__right">
+			<span class="phone">+7 (495) 787-91-06</span>
+			<a class="mail" href="mailto:info@vikingboots.ru">info@vikingboots.ru</a>
+		</div>
+	</div>
+	<!-- END .header -->
 
+	<!-- BEGIN .menu -->
+	<ul class="menu">
+		<li class="menu__input"><input type="text" placeholder="Поиск по товарам... "></li>
+		<li class="menu__item"><a href="#">О марке</a></li>
+		<li class="menu__item is-active"><a href="#">Коллекции</a></li>
+		<li class="menu__item"><a href="#">Где купить</a></li>
+		<li class="menu__item"><a href="#">контакты</a></li>
+		<div class="border"></div>
+	</ul>
+	<!-- END .menu -->
+
+	<!-- BEGIN .cycle -->
+		<div class="cycle cycle-slideshow" 
+	    data-cycle-fx="fadeout"
+			data-cycle-pager-template="<button></button>"
+      data-cycle-prev=".cycle__nav_prev"
+      data-cycle-next=".cycle__nav_next"
+      data-cycle-slides=".cycle__item"
+	    data-cycle-timeout="4000"
+	    data-cycle-pause-on-hover="true"
+	    >
+	    <div class="cycle__item">
+				<img src="img/arr1.png" alt="img">
+	    	<div class="cycle__field">
+	    		<div class="cycle__top">
+	    			<h3 class="h1">подчиняя<br>Законы Природы</h3>
+	    			<div class="cycle__text">более 300 моделей детской обуви<br>для активного отдыха</div>
+	    		</div>
+					<div class="cycle__bot">
+						<div class="cycle__col">
+							<a href="#" class="h4">открылся новый магазин Viking</a>
+							<p>Теперь все могут посетить нас и выбрать все что вашей душе угодно по адресу: ул. Ленина 555 / 87	</p>
+							<div class="cycle__date">12.01.2013</div>
+						</div>
+						<div class="cycle__col">
+							<a href="#" class="h4">Скидки на все модели 2013 года</a>
+							<p>Все модели прошедшего года теперь можно купить на 50% дешевле. В нашем каталоге этого добра хватает!</p>
+							<div class="cycle__date">05.01.2013</div>
+						</div>
+						<div class="cycle__col">
+							<a href="#" class="h4">Подарите детям радость</a>
+							<p>Если в вашей семье больше 15 детей, мы сделаем скидку в 10% на каждую пару обуви, которую вы купите в нашем магазине</p>
+							<div class="cycle__date">05.01.2013</div>
+						</div>
+					</div>
+	    	</div>
+	    </div>
+	    <div class="cycle__item">
+				<img src="img/arr2.png" alt="img">
+	    	<div class="cycle__field">
+	    		<div class="cycle__top">
+	    			<h3 class="h1">подчиняя<br>Законы Природы</h3>
+	    			<div class="cycle__text">более 300 моделей детской обуви<br>для активного отдыха</div>
+	    		</div>
+					<div class="cycle__bot">
+						<div class="cycle__col">
+							<a href="#" class="h4">открылся новый магазин Viking</a>
+							<p>Теперь все могут посетить нас и выбрать все что вашей душе угодно по адресу: ул. Ленина 555 / 87	</p>
+							<div class="cycle__date">12.01.2013</div>
+						</div>
+						<div class="cycle__col">
+							<a href="#" class="h4">Скидки на все модели 2013 года</a>
+							<p>Все модели прошедшего года теперь можно купить на 50% дешевле. В нашем каталоге этого добра хватает!</p>
+							<div class="cycle__date">05.01.2013</div>
+						</div>
+						<div class="cycle__col">
+							<a href="#" class="h4">Подарите детям радость</a>
+							<p>Если в вашей семье больше 15 детей, мы сделаем скидку в 10% на каждую пару обуви, которую вы купите в нашем магазине</p>
+							<div class="cycle__date">05.01.2013</div>
+						</div>
+					</div>
+	    	</div>
+	    </div>
+	    <div class="cycle__item">
+				<img src="img/arr1.png" alt="img">
+	    	<div class="cycle__field">
+	    		<div class="cycle__top">
+	    			<h3 class="h1">подчиняя<br>Законы Природы</h3>
+	    			<div class="cycle__text">более 300 моделей детской обуви<br>для активного отдыха</div>
+	    		</div>
+					<div class="cycle__bot">
+						<div class="cycle__col">
+							<a href="#" class="h4">открылся новый магазин Viking</a>
+							<p>Теперь все могут посетить нас и выбрать все что вашей душе угодно по адресу: ул. Ленина 555 / 87	</p>
+							<div class="cycle__date">12.01.2013</div>
+						</div>
+						<div class="cycle__col">
+							<a href="#" class="h4">Скидки на все модели 2013 года</a>
+							<p>Все модели прошедшего года теперь можно купить на 50% дешевле. В нашем каталоге этого добра хватает!</p>
+							<div class="cycle__date">05.01.2013</div>
+						</div>
+						<div class="cycle__col">
+							<a href="#" class="h4">Подарите детям радость</a>
+							<p>Если в вашей семье больше 15 детей, мы сделаем скидку в 10% на каждую пару обуви, которую вы купите в нашем магазине</p>
+							<div class="cycle__date">05.01.2013</div>
+						</div>
+					</div>
+	    	</div>
+	    </div>
+	    <div class="cycle__item">
+				<img src="img/arr2.png" alt="img">
+	    	<div class="cycle__field">
+	    		<div class="cycle__top">
+	    			<h3 class="h1">подчиняя<br>Законы Природы</h3>
+	    			<div class="cycle__text">более 300 моделей детской обуви<br>для активного отдыха</div>
+	    		</div>
+					<div class="cycle__bot">
+						<div class="cycle__col">
+							<a href="#" class="h4">открылся новый магазин Viking</a>
+							<p>Теперь все могут посетить нас и выбрать все что вашей душе угодно по адресу: ул. Ленина 555 / 87	</p>
+							<div class="cycle__date">12.01.2013</div>
+						</div>
+						<div class="cycle__col">
+							<a href="#" class="h4">Скидки на все модели 2013 года</a>
+							<p>Все модели прошедшего года теперь можно купить на 50% дешевле. В нашем каталоге этого добра хватает!</p>
+							<div class="cycle__date">05.01.2013</div>
+						</div>
+						<div class="cycle__col">
+							<a href="#" class="h4">Подарите детям радость</a>
+							<p>Если в вашей семье больше 15 детей, мы сделаем скидку в 10% на каждую пару обуви, которую вы купите в нашем магазине</p>
+							<div class="cycle__date">05.01.2013</div>
+						</div>
+					</div>
+	    	</div>
+	    </div>
+			<button class="cycle__nav cycle__nav_prev"><span><i></i></span></button>
+			<button class="cycle__nav cycle__nav_next"><span><i></i></span></button>
+		</div>
+		<!-- END .cycle -->
+
+		<!-- BEGIN .previews-->
+		<div class="previews">
+			<div class="previews__item" style="background: url('img/arr3.png')">
+				<div class="previews__col">
+					<h3 class="h4">Мембрана Gore-Tex</h3>
+					<div class="previews__text"><p>Мокрая ткань отнимает тепло у вашего тела. Ткани GORE-TEX® крайне водостойки, благодаря чему вы остаетесь в сухости и продолжаете заниматься своим делом в комфорте.</p></div>
+					<a href="#" class="btn">Подробнее<i>&raquo;</i></a>
+				</div>
+			</div>
+			<div class="previews__item" style="background: url('img/arr4.png')">
+				<div class="previews__col">
+					<h3 class="h4">Теплоизоляция</h3>
+					<div class="previews__text"><p>Мокрая ткань отнимает тепло у вашего тела. Ткани GORE-TEX® крайне водостойки, благодаря чему вы остаетесь в сухости и продолжаете заниматься своим делом в комфорте.</p></div>
+					<a href="#" class="btn">Подробнее<i>&raquo;</i></a>
+				</div>
+			</div>
+			<div class="previews__item" style="background: url('img/arr5.png')">
+				<div class="previews__col">
+					<h3 class="h4">Система шнуровки БОА</h3>
+					<div class="previews__text"><p>Мокрая ткань отнимает тепло у вашего тела. Ткани GORE-TEX® крайне водостойки, благодаря чему вы остаетесь в сухости и продолжаете заниматься своим делом в комфорте.</p></div>
+					<a href="#" class="btn">Подробнее<i>&raquo;</i></a>
+				</div>
+			</div>
+			<div class="border"></div>
+		</div>
+		<!-- END .previews -->
+
+		<!-- BEGIN .carousel -->
+		<div class="popular-items">
+			<h3 class="h3">Популярные товары</h3>
+			<div class="border"></div>
+			<div class="carousel">
+				<div class="cycle-slideshow" 
+			    data-cycle-fx="carousel"
+			    data-cycle-timeout="0"
+			    data-cycle-carousel-visible="3"
+					data-cycle-pager-template="<button></button>"
+			    data-cycle-next=".cycle__nav_prev"
+			    data-cycle-prev=".cycle__nav_next"
+			    data-cycle-slides=".carousel__item"
+			    >
+			    <div class="carousel__item">
+			    	<h3 class="h4">Ботинки для девочек Polar</h3>
+			    	<div class="carousel__img"><img src="img/arr6.png" alt="img"></a></div>
+			    	<div class="price">
+			    		<div class="price__value">560 руб.</div>
+			    	</div>
+			    </div>
+			    <div class="carousel__item">
+			    	<h3 class="h4">Ботинки для девочек Polar<br>и девочек Polar</h3>
+			    	<div class="carousel__img"><img src="img/arr7.png" alt="img"></a></div>
+			    	<div class="price">
+			    		<div class="price__discount">-25%</div>
+			    		<div class="price__value">560 руб.</div>
+			    	</div>
+			    </div>
+			    <div class="carousel__item">
+			    	<h3 class="h4">Ботинки для девочек Polar</h3>
+			    	<div class="carousel__img"><img src="img/arr8.png" alt="img"></a></div>
+			    	<div class="price">
+			    		<div class="price__value">560 руб.</div>
+			    	</div>
+			    </div>
+			  </div>
+				<button class="cycle__nav cycle__nav_prev"><i></i></button>
+				<button class="cycle__nav cycle__nav_next"><i></i></button>
+			</div>
+		</div>
+		<!-- END .carousel -->
+
+		<!-- BEGIN .article -->
+		<div class="article">
+			<div class="border"></div>
+			<div class="article__item">
+				<h3 class="h4">Выбираем правильную <br>детскую обувь</h3>
+				<p>Красота и здоровье ножек наших деток непосредственно зависит от обуви, которую они носят.</p>
+				<a href="#" class="article__continue">...</a>
+			</div>
+			<div class="article__item">
+				<h3 class="h4">Чего обычно не знают<br>родители, интересные факты</h3>
+				<p>Обычно левая и правая нога имеют одинаковую длину, однако иногда разница в их длине может достигать 6 мм</p>
+				<a href="#" class="article__continue">...</a>
+			</div>
+			<div class="article__item article__item_mod">
+				<h3 class="h4">Амортизационные<br>свойства обуви</h3>
+				<p>Прыжки на твердую поверхность, такую как бетон, асфальт, брусчатку могут приводить к деформациям кости и сустава.</p>
+				<a href="#" class="article__continue">...</a>
+			</div>
+		</div>
+		<!-- END .article -->
+		<!-- BEGIN .footer -->
+		<div class="footer">
+			<div class="border"></div>
+			<div class="footer__left">
+				<a href="#" class="footer__logo"></a>
+				<div class="footer__copyright">© 2014 by Viking обувь</div>
+			</div>
+			<div class="footer__right">
+				<span class="phone">+7 (495) 787-91-06</span>
+				<a class="mail" href="mailto:info@vikingboots.ru">info@vikingboots.ru</a>
+				<div class="footer__development">Разработка и продвижение сайта: <a href="#">ADV Creative</a></div>
+			</div>
+		</div>
+		<!-- END .footer -->
 </div>
 <!-- END out-->
 
