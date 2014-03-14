@@ -49,7 +49,7 @@
 	    data-cycle-pause-on-hover="true"
 	    >
 	    <div class="cycle__item">
-				<img src="img/arr1.png" alt="img">
+	    	<img src="img/arr1.png" alt="img">
 	    	<div class="cycle__field">
 	    		<div class="cycle__top">
 	    			<h3 class="h1">подчиняя<br>Законы Природы</h3>
@@ -75,7 +75,7 @@
 	    	</div>
 	    </div>
 	    <div class="cycle__item">
-				<img src="img/arr2.png" alt="img">
+	    	<img src="img/arr2.png" alt="img">
 	    	<div class="cycle__field">
 	    		<div class="cycle__top">
 	    			<h3 class="h1">подчиняя<br>Законы Природы</h3>
@@ -101,7 +101,7 @@
 	    	</div>
 	    </div>
 	    <div class="cycle__item">
-				<img src="img/arr1.png" alt="img">
+	    	<img src="img/arr1.png" alt="img">
 	    	<div class="cycle__field">
 	    		<div class="cycle__top">
 	    			<h3 class="h1">подчиняя<br>Законы Природы</h3>
@@ -127,7 +127,7 @@
 	    	</div>
 	    </div>
 	    <div class="cycle__item">
-				<img src="img/arr2.png" alt="img">
+	    	<img src="img/arr2.png" alt="img">
 	    	<div class="cycle__field">
 	    		<div class="cycle__top">
 	    			<h3 class="h1">подчиняя<br>Законы Природы</h3>
@@ -159,21 +159,24 @@
 
 		<!-- BEGIN .previews-->
 		<div class="previews">
-			<div class="previews__item" style="background: url('img/arr3.png')">
+			<div class="previews__item">
+				<img src="img/arr3.png" alt="img">
 				<div class="previews__col">
 					<h3 class="h4">Мембрана Gore-Tex</h3>
 					<div class="previews__text"><p>Мокрая ткань отнимает тепло у вашего тела. Ткани GORE-TEX® крайне водостойки, благодаря чему вы остаетесь в сухости и продолжаете заниматься своим делом в комфорте.</p></div>
 					<a href="#" class="btn">Подробнее<i>&raquo;</i></a>
 				</div>
 			</div>
-			<div class="previews__item" style="background: url('img/arr4.png')">
+			<div class="previews__item">
+				<img src="img/arr4.png" alt="img">
 				<div class="previews__col">
 					<h3 class="h4">Теплоизоляция</h3>
 					<div class="previews__text"><p>Мокрая ткань отнимает тепло у вашего тела. Ткани GORE-TEX® крайне водостойки, благодаря чему вы остаетесь в сухости и продолжаете заниматься своим делом в комфорте.</p></div>
 					<a href="#" class="btn">Подробнее<i>&raquo;</i></a>
 				</div>
 			</div>
-			<div class="previews__item" style="background: url('img/arr5.png')">
+			<div class="previews__item previews__item_right">
+				<img src="img/arr5.png" alt="img">
 				<div class="previews__col">
 					<h3 class="h4">Система шнуровки БОА</h3>
 					<div class="previews__text"><p>Мокрая ткань отнимает тепло у вашего тела. Ткани GORE-TEX® крайне водостойки, благодаря чему вы остаетесь в сухости и продолжаете заниматься своим делом в комфорте.</p></div>
@@ -184,40 +187,89 @@
 		</div>
 		<!-- END .previews -->
 
-		<!-- BEGIN .carousel -->
+	<!-- BEGIN .popular-items .carousel -->
 		<div class="popular-items">
 			<h3 class="h3">Популярные товары</h3>
 			<div class="border"></div>
-			<div class="carousel">
+			<div class="carousel collection">
 				<div class="cycle-slideshow" 
-			    data-cycle-fx="carousel"
-			    data-cycle-timeout="0"
-			    data-cycle-carousel-visible="3"
+					data-cycle-fx="scrollHorz"
+			    data-cycle-timeout="4000"
 					data-cycle-pager-template="<button></button>"
-			    data-cycle-next=".cycle__nav_prev"
-			    data-cycle-prev=".cycle__nav_next"
-			    data-cycle-slides=".carousel__item"
+			    data-cycle-prev=".cycle__nav_prev"
+			    data-cycle-next=".cycle__nav_next"
+			    data-cycle-slides=".collection__item"
 			    >
-			    <div class="carousel__item">
-			    	<h3 class="h4">Ботинки для девочек Polar</h3>
-			    	<div class="carousel__img"><img src="img/arr6.png" alt="img"></a></div>
-			    	<div class="price">
-			    		<div class="price__value">560 руб.</div>
+			    <div class="collection__item">
+			    	<div class="collection__block">
+				    	<h3 class="h4">Ботинки для девочек Polar</h3>
+				    	<div class="collection__img"><img src="img/arr6.png" alt=""></div>
+				    	<div class="price">
+				    		<div class="price__value">560 руб.</div>
+				    	</div>
 			    	</div>
-			    </div>
-			    <div class="carousel__item">
-			    	<h3 class="h4">Ботинки для девочек Polar<br>и девочек Polar</h3>
-			    	<div class="carousel__img"><img src="img/arr7.png" alt="img"></a></div>
-			    	<div class="price">
+			    	<div class="collection__block">
+				    	<h3 class="h4">Ботинки для девочек Polar<br>и девочек Polar</h3>
+				    	<div class="collection__img"><img src="img/arr7.png" alt=""></div>
+				    	<div class="price">
 			    		<div class="price__discount">-25%</div>
-			    		<div class="price__value">560 руб.</div>
+				    		<div class="price__value">560 руб.</div>
+				    	</div>
+			    	</div>
+			    	<div class="collection__block">
+				    	<h3 class="h4">Ботинки для девочек Polar</h3>
+				    	<div class="collection__img"><img src="img/arr8.png" alt=""></div>
+				    	<div class="price">
+				    		<div class="price__value">560 руб.</div>
+				    	</div>
 			    	</div>
 			    </div>
-			    <div class="carousel__item">
-			    	<h3 class="h4">Ботинки для девочек Polar</h3>
-			    	<div class="carousel__img"><img src="img/arr8.png" alt="img"></a></div>
-			    	<div class="price">
-			    		<div class="price__value">560 руб.</div>
+			    <div class="collection__item">
+			    	<div class="collection__block">
+				    	<h3 class="h4">Ботинки для девочек Polar</h3>
+				    	<div class="collection__img"><img src="img/arr6.png" alt=""></div>
+				    	<div class="price">
+				    		<div class="price__value">560 руб.</div>
+				    	</div>
+			    	</div>
+			    	<div class="collection__block">
+				    	<h3 class="h4">Ботинки для девочек Polar<br>и девочек Polar</h3>
+				    	<div class="collection__img"><img src="img/arr7.png" alt=""></div>
+				    	<div class="price">
+			    		<div class="price__discount">-25%</div>
+				    		<div class="price__value">560 руб.</div>
+				    	</div>
+			    	</div>
+			    	<div class="collection__block">
+				    	<h3 class="h4">Ботинки для девочек Polar</h3>
+				    	<div class="collection__img"><img src="img/arr8.png" alt=""></div>
+				    	<div class="price">
+				    		<div class="price__value">560 руб.</div>
+				    	</div>
+			    	</div>
+			    </div>
+			    <div class="collection__item">
+			    	<div class="collection__block">
+				    	<h3 class="h4">Ботинки для девочек Polar</h3>
+				    	<div class="collection__img"><img src="img/arr6.png" alt=""></div>
+				    	<div class="price">
+				    		<div class="price__value">560 руб.</div>
+				    	</div>
+			    	</div>
+			    	<div class="collection__block">
+				    	<h3 class="h4">Ботинки для девочек Polar<br>и девочек Polar</h3>
+				    	<div class="collection__img"><img src="img/arr7.png" alt=""></div>
+				    	<div class="price">
+			    		<div class="price__discount">-25%</div>
+				    		<div class="price__value">560 руб.</div>
+				    	</div>
+			    	</div>
+			    	<div class="collection__block">
+				    	<h3 class="h4">Ботинки для девочек Polar</h3>
+				    	<div class="collection__img"><img src="img/arr8.png" alt=""></div>
+				    	<div class="price">
+				    		<div class="price__value">560 руб.</div>
+				    	</div>
 			    	</div>
 			    </div>
 			  </div>
@@ -225,7 +277,7 @@
 				<button class="cycle__nav cycle__nav_next"><i></i></button>
 			</div>
 		</div>
-		<!-- END .carousel -->
+		<!-- END .popular-items .carousel -->
 
 		<!-- BEGIN .article -->
 		<div class="article">
@@ -240,9 +292,14 @@
 				<p>Обычно левая и правая нога имеют одинаковую длину, однако иногда разница в их длине может достигать 6 мм</p>
 				<a href="#" class="article__continue">...</a>
 			</div>
-			<div class="article__item article__item_mod">
+			<div class="article__item">
 				<h3 class="h4">Амортизационные<br>свойства обуви</h3>
 				<p>Прыжки на твердую поверхность, такую как бетон, асфальт, брусчатку могут приводить к деформациям кости и сустава.</p>
+				<a href="#" class="article__continue">...</a>
+			</div>
+			<div class="article__item article__item_mod">
+				<h3 class="h4">Выбираем правильную <br>детскую обувь</h3>
+				<p>Красота и здоровье ножек наших деток непосредственно зависит от обуви, которую они носят.</p>
 				<a href="#" class="article__continue">...</a>
 			</div>
 		</div>

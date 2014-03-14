@@ -2,7 +2,32 @@ body
 	font-size: 12px 
 	font-family: Arial, sans-serif 
 	line-height: 1.4
-	
+.out
+	margin: 0 auto
+	padding: 0 39px 0 31px 
+	min-width: 1070px
+	width: 70%
+	min-height: 100%
+	+box
+.h1
+	font-size: 36px
+.h3
+	font-size: 26px
+.h4
+	font-size: 18px
+.h1, .h3, .h4
+	text-transform: uppercase
+a, .h1, .h3, .h4, .phone, .mail, .menu__item, .cycle__top, .cycle__date, .characteristic__item, .in, .series__table
+	color: #231F20
+	font-weight: 400 
+	font-family: 'Roboto Condensed', sans-serif 
+p
+	font: 13px normal Arial, sans-serif
+.border
+	left: -31px
+	right: -39px
+	height: 3px 
+	background: #000
 .btn
 	width: 185px
 	height: 47px
@@ -20,3 +45,82 @@ body
 	&:hover
 		background: #E34617
 		+transition(0.2s) 
+.breadcrumbs
+	width: 100%
+	.breadcrumbs__item
+		position: relative
+		padding: 0 15px
+		display: inline-block
+		a
+			color: #E44617 
+			font-size: 13px
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+		i
+			padding-right: 3px
+			color: #E44617 
+			font-size: 14px
+			font-style: normal
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: -2.5px
+			margin-top: -4px
+			+s(bc-pic)
+		&:first-child
+			padding-left: 0
+			&:before
+				content: none
+		&:last-child
+			padding-right: 0
+	.breadcrumbs__item_right
+		float: right
+		text-align: right
+		&:before
+			display: none
+
+
+
+// footer
+.footer
+	position: relative
+	height: 106px
+	.border
+		position: absolute
+		top: 0
+.footer__left
+	float: left
+.footer__logo
+	margin-top: 18px
+	text-decoration: none
+	display: inline-block
+	+s(footer__logo)
+.footer__right
+	float: right
+	margin-top: 28px
+	line-height: 1
+	text-align: right
+.footer__copyright
+	margin-top: 10px
+.footer__development
+	margin-top: 16px
+	line-height: 1
+	a
+		text-decoration: none
+		color: #E44617
+		&:hover
+			text-decoration: underline
+			
+@media (min-width: 1760px)
+	.article
+		padding-right: 20px !important
+		padding-left: 37px !important 
+	.article__item
+		padding-right: 56px !important
+		width: 25% !important
+	.article__item_mod
+		display: inline-block !important
+	.article__continue
+		right: 20px !important
