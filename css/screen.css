@@ -331,7 +331,7 @@ input:focus::placeholder, textarea:focus::placeholder { font-size: 0; }
 .text_bgred { margin: 10px 0; padding: 0 20px; color: white; background: #e44617; }
 
 .form { margin: 50px auto 95px; width: 452px; font-size: 0; }
-.form textarea, .form input { margin: 0 9px 9px 0; padding: 10px 10px 10px 16px; }
+.form textarea, .form input { margin: 0 9px 9px 0; padding: 10px 10px 10px 16px; line-height: 1.2; }
 .form textarea { width: 442px; height: 108px; resize: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .form input { width: 217px; }
 .form .h4 { margin-bottom: 22px; text-align: center; }
