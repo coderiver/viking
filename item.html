@@ -10,7 +10,8 @@
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
 	<script src="js/cycle.js"></script>
-	<script src="js/jquery.cycle2.carousel.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -42,15 +43,58 @@
 	<div class="l l-col">
 
 		<!-- BEGIN .l-col1 -->
-		<div class="l-col1">
-			<div class="photo">
-				<div class="photo__top"><img src="img/arr9.png" alt="img"></div>
-				<div class="photo__row">
-					<div class="photo__item"><img src="img/arr10.png" alt="img"></div>
-					<div class="photo__item"><img src="img/arr10.png" alt="img"></div>
-					<div class="photo__item photo__item_right"><img src="img/arr10.png" alt="img"></div>
-				</div>
+		<div class="l-col1 l-col1_mod">
+			<!-- BEGIN .gallery -->
+			<div class="gallery js-slider">
+			 	<div class="gallery__main js-cycle js-cycle-1"
+			 	data-cycle-timeout="0"
+			  	data-cycle-auto-height="container"	
+			  	data-cycle-slides="div"
+			 	>
+			 		<div class="gallery__item">
+			 			<img src="img/arr9.png" alt="img">
+			 		</div>
+			  		<div class="gallery__item">
+			 			<img src="img/arr9.png" alt="img">
+			 		</div>
+			 		<div class="gallery__item">
+			 			<img src="img/arr9.png" alt="img">
+			 		</div>
+			 		<div class="gallery__item">
+			 			<img src="img/arr9.png" alt="img">
+			 		</div>
+			 		<div class="gallery__item">
+			 			<img src="img/arr9.png" alt="img">
+			 		</div>
+			  		<div class="gallery__item">
+			 			<img src="img/arr9.png" alt="img">
+			 		</div>
+			 		<div class="gallery__item">
+			 			<img src="img/arr9.png" alt="img">
+			 		</div>
+			 		<div class="gallery__item">
+			 			<img src="img/arr9.png" alt="img">
+			 		</div>
+			 </div>
+			 <div class="gallery__nav js-cycle js-cycle-2"
+			  	data-cycle-timeout="0"
+			  	data-cycle-fx="carousel"
+			  	data-allow-wrap="false"
+			  	data-cycle-carousel-visible="4"
+			  	data-cycle-slide-active-class="is-selected"
+			  	data-cycle-slides="div"
+			 >
+				<div><img src="img/arr10.png" alt="img" width="100%"></div>
+				<div><img src="img/arr10.png" alt="img" width="100%"></div>
+				<div><img src="img/arr10.png" alt="img" width="100%"></div>
+				<div><img src="img/arr10.png" alt="img" width="100%"></div>
+				<div><img src="img/arr17.png" alt="img" width="100%"></div>
+				<div><img src="img/arr17.png" alt="img" width="100%"></div>
+				<div><img src="img/arr17.png" alt="img" width="100%"></div>
+				<div><img src="img/arr17.png" alt="img" width="100%"></div>
+			 </div>
 			</div>
+			<!-- END .gallery -->
 		</div>
 		<!-- END .l-col1 -->
 

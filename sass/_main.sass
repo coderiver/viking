@@ -1,4 +1,4 @@
-// header
+// header 
 .header
 	height: 94px
 .header__left
@@ -406,33 +406,34 @@
 // page item
 .l-col
 	margin: 18px 0
+	// .l-col1_mod
+	// 	max-width: 490px 
 	.l-col2
 		padding: 0 20px
 		+box
-// .photo
-.photo
-	margin-top: -18px
-.photo__top
+.gallery
 	width: 100%
-	img
-		min-height: 465px
+	.gallery__item
 		width: 100%
-.photo__row
-	font-size: 0
-.photo__item
-	margin-right: 2%
-	width: 32%
-	border: 1px solid #e9e9e9
-	cursor: pointer
-	display: inline-block
-	+box
-	img
-		width: 100%
-		min-height: 141px 
-.photo__item_right
-	margin-right: 0
-	
-
+		img
+			width: 100%
+.gallery__nav
+	width: auto !important
+	.cycle-carousel-wrap
+		width: 96.5% !important
+	.cycle-slide
+		margin-right: 2%
+		font-size: 0
+		width: 33%
+		+box
+		img
+			min-height: 147px
+			margin-bottom: 1%
+			border: 1px solid #e9e9e9
+			cursor: pointer
+			+box
+			&:last-child
+				margin-right: 0	
 //characteristic
 .characteristic__top
 	position: relative
@@ -579,8 +580,8 @@
 	.input
 		float: right 
 .input
-	width: 152px
-	margin-top: -5px
+	min-width: 152px
+	margin-top: -15px
 	vertical-align: middle
 	font-family: 'Roboto Condensed', sans-serif
 	color: #231F20 
@@ -588,15 +589,22 @@
 .input__title
 	font-size: 13px
 	line-height: 1
-	color: #898586 
+	color: #898586
 .select
+	min-width: 152px
 	position: relative
+	padding: 10px 17px 0
 	font-size: 15px
 	cursor: pointer
 	font-weight: bold
-.is-active
-	.select__list
-		display: block
+	&.is-active
+		padding-bottom: 11px
+		+box-shadow( 0 0 5px #c4c4c4)
+		.select__list
+			display: block
+		.select__text
+			&:before
+				+rotate(180, deg)
 .select__text
 	position: relative
 	padding-right: 24px
@@ -615,7 +623,7 @@
 		+s(sel-pic)
 .select__list
 	position: absolute
-	top: 19px
+	top: 52px
 	left: 0
 	right: 0
 	font-weight: normal
@@ -623,7 +631,13 @@
 	z-index: 100
 	display: none
 	background: #FFF 
+	+box-shadow( 0 2px 5px #c4c4c4)
 	li
+		margin: 0 11px 
+		padding: 0 6px 
+		height: 38px
+		line-height: 38px
+		border-top: 1px solid #e9e9e9 
 		&:hover
 			background: #E44617 
 			+transition(0.2s)
@@ -712,10 +726,14 @@
 		.input
 			width: 217px
 			margin-top: -10px
+		.select_mod
+			padding: 0
+			&.is-active
+				padding-bottom: 0
 		.select__list
 			width: 199px
 			left: 1px
-			top: 34px
+			top: 37px
 			padding-left: 15px
 		.select__text
 			padding: 10px 10px 10px 16px
@@ -726,6 +744,8 @@
 			+box
 			&:before
 				right: 14px
+				
+
 // page typography
 .map
 	position: relative
@@ -738,38 +758,152 @@
 		top: 0
 		left: 0
 		right: 0
-	.map__marker
+.map__block
+	position: absolute
+	padding: 8px 40px 8px 8px
+	height: 38px
+	color: #fff 
+	font-size: 16px
+	text-decoration: none
+	text-transform: uppercase
+	cursor: pointer
+	background: #e44617
+	display: none
+	+border-radius(5px) 
+	+box
+	span
+		text-transform: lowercase
+	i
 		position: absolute
-		padding: 8px
-		top: 178px
-		left: 94px
-		width: 210px
-		height: 38px
-		color: #fff 
-		font-size: 16px
-		text-decoration: none
-		text-transform: uppercase
-		background: #e44617
-		+border-radius(5px) 
-		+box
-		&:hover
-			text-decoration: underline
-		span
-			text-transform: lowercase
-		i
-			position: absolute
-			top: 12px
-			right: 12px
-			+s(map-pic)
-		&:before
-			position: absolute
-			content: ''
-			left: -29px
-			top: -7px
-			+s(mar-pic)
-		&:after
-			position: absolute
-			content: ''
-			left: 9px
-			bottom: -22px
-			+arr(25,22, #e44617, b)
+		top: 12px
+		right: 12px
+		+s(map-pic)
+	&:before
+		position: absolute
+		content: ''
+		left: -29px
+		top: -7px
+		+s(mar-pic)
+	&:after
+		position: absolute
+		content: ''
+		left: 9px
+		bottom: -22px
+		+arr(25,22, #e44617, b)
+	&.map__block_mos
+		left: 9.5%
+		top: 33.5%
+		display: block
+	&.map__block_ryaz
+		left: 10%
+		top: 40%
+	&.map__block_pen
+		top: 46.5%
+		left: 11%
+	&.map__block_rost
+		left: 3.2%
+		top: 52.5%
+	&.map__block_kir
+		left: 18.5%
+		top: 41%
+	&.map__block_per
+		left: 23.45%
+		top: 44%
+	&.map__block_sykt1
+		left: 26.5%
+		top: 31%
+	&.map__block_sykt2
+		left: 23.5%
+		top: 36%
+	&.map__block_tom
+		left: 38.5%
+		top: 60%
+	&.map__block_kras
+		left: 50.5%
+		top: 48%
+	&.map__block_yak1
+		left: 72.5%
+		top: 21%
+	&.map__block_yak2
+		left: 61.5%
+		top: 46%
+	&.map__block_yak3
+		left: 72.5%
+		top: 57%
+	&.map__block_irkut
+		left: 52.5%
+		top: 70%
+	&.map__block_chit
+		left: 67.5%
+		top: 65.5%
+	&.map__marker_petr
+		right: -14.7%
+		top: 37%
+.map__item
+	display: inline-block
+	&.is-active
+		.map__block
+			display: block
+.map__marker
+	position: absolute
+	cursor: pointer
+	+s(pointer-pic)
+.map__marker_mos
+	top: 42%
+	left: 11%
+.map__marker_ryaz
+	top: 49%
+	left: 11.5%
+.map__marker_pen
+	top: 55%
+	left: 12.5%
+.map__marker_rost
+	top: 61%
+	left: 4.8%
+.map__marker_kir
+	top: 50%
+	left: 20%
+.map__marker_per
+	top: 53%
+	left: 25%
+.map__marker_sykt1
+	top: 40%
+	left: 28%
+.map__marker_sykt2
+	top: 45%
+	left: 25%
+.map__marker_tom
+	top: 69%
+	left: 40%
+.map__marker_kras
+	top: 57%
+	left: 52%
+.map__marker_yak1
+	top: 30%
+	left: 74%
+.map__marker_yak2
+	top: 55%
+	left: 63%
+.map__marker_yak3
+	top: 66%
+	left: 74%
+.map__marker_irkut
+	top: 79%
+	left: 54%
+.map__marker_chit
+	top: 74.5%
+	left: 69%
+.map__marker_petr
+	top: 46%
+	right: 5%
+.shops
+	display: none
+.shops__ul
+	margin-top: 30px
+	.shops__item
+		margin-right: 10%
+		width: 26%
+		font-size: 13px
+		display: inline-block
+		&:last-child
+			margin-right: 0
