@@ -116,10 +116,20 @@ $(document).ready(function() {
 	          slideshows.cycle('goto', index);
 	      });
 	  });
+	function inser(){
+		$( ".insertaftereme" ).after( $( "#ajax-template .inserted" ).clone() );
+		$('.loading').hide();
+	}
 	$(window).scroll(function() {
 	   if($(window).scrollTop() + $(window).height() == $(document).height()) {
 	      $('.loading').show();
-	      $( ".insertaftereme" ).after( $( "#ajax-template .inserted" ).clone() );
+	      
+
+
+	      setTimeout(
+			inser
+	      	, 
+	      	1000);
 	      //htmltoinsert = $('#ajax-template').html();
 	      //ins = $('.insertaftereme');
 	      //$( htmltoinsert ).insertAfter( ".insertaftereme" );

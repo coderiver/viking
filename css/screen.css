@@ -112,6 +112,8 @@ input:focus::placeholder, textarea:focus::placeholder { font-size: 0; }
 
 .header__right, .menu { padding: 0 20px 0 8px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
+.loading { padding: 20px; text-align: center; font-size: 30px; font-family: Helvetica, arial, sans-serif; }
+
 .menu { position: relative; width: 100%; font-size: 0; }
 .menu .border { position: absolute; bottom: -3px; }
 .menu .menu__item { padding: 0 15px; height: 38px; font-size: 16px; display: inline-block; }
