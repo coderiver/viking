@@ -117,24 +117,17 @@ $(document).ready(function() {
 	      });
 	  });
 	function inser(){
-		$( ".insertaftereme" ).after( $( "#ajax-template .inserted" ).clone() );
+		// you need to replace it with ajax call to server, now its just static html
+		$( ".insertaftereme" ).after( $( "#ajax-template .inserted" ).clone() ); 
 		$('.loading').hide();
 	}
+	//scroll to bottom
 	$(window).scroll(function() {
 	   if($(window).scrollTop() + $(window).height() == $(document).height()) {
 	      $('.loading').show();
-	      
-
-
-	      setTimeout(
-			inser
-	      	, 
-	      	1000);
-	      //htmltoinsert = $('#ajax-template').html();
-	      //ins = $('.insertaftereme');
-	      //$( htmltoinsert ).insertAfter( ".insertaftereme" );
+	      setTimeout(inser, 1000);
 	   }
-});
+	});
 
 });
 
