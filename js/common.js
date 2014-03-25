@@ -116,6 +116,15 @@ $(document).ready(function() {
 	          slideshows.cycle('goto', index);
 	      });
 	  });
-
+	$(window).scroll(function() {
+	   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+	      $('.loading').show();
+	      $( ".insertaftereme" ).after( $( "#ajax-template .inserted" ).clone() );
+	      //htmltoinsert = $('#ajax-template').html();
+	      //ins = $('.insertaftereme');
+	      //$( htmltoinsert ).insertAfter( ".insertaftereme" );
+	   }
+});
 
 });
+
