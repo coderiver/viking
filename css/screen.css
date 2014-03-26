@@ -340,12 +340,13 @@ input:focus::placeholder, textarea:focus::placeholder { font-size: 0; }
 .form .h4 { margin-bottom: 22px; text-align: center; }
 .form .btn { margin-right: 9px; width: 217px; height: 37px; line-height: 37px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .form .form__field { font-size: 0; }
-.form .form__field .input { width: 217px; margin-top: -10px; }
+.form .form__field .input { width: 217px; margin: 0; height: 44px; }
 .form .form__field .select_mod { padding: 0; }
 .form .form__field .select_mod.is-active { padding-bottom: 0; }
-.form .form__field .select__list { width: 199px; left: 1px; top: 37px; padding-left: 15px; }
-.form .form__field .select__text { padding: 10px 10px 10px 16px; width: 217px; height: 37px; line-height: 1; border: 1px solid #231f20; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.form .form__field .select__list { width: 214px; left: 1px; top: 35px; margin: 0; }
+.form .form__field .select__text { padding: 10px 10px 10px 16px; width: 217px; height: 35px; line-height: 1; border: 1px solid #231f20; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .form .form__field .select__text:before { right: 14px; }
+.form .form__field input { line-height: 0.9; vertical-align: top; height: 35px; padding-bottom: 9px; }
 
 .map { position: relative; padding-top: 3px; }
 .map img { width: 100%; display: block; }
