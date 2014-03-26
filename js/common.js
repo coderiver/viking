@@ -14,6 +14,12 @@ $(document).ready(function() {
     	var shop = $(this).attr("data-shop");
     	$(".shops").hide();
     	$("."+shop).show();
+    	targetid = $(this).data('shop');
+    	target = $('.'+targetid);
+    	$('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
     	event.stopPropagation();
 		});
   // select
